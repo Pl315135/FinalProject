@@ -7,10 +7,13 @@ public class BlackJack {
 public static void blackJackGame() {
 	Scanner input = new Scanner(System.in);
 	int drawCard = 0;
-	int aces;
+	int aces = 0;
 	int points;
-	String cardName;
+	int totalPoints = 0;
+	String cardName = null;
 	
+	
+	for (int count = 0; count < 2; count++) {
 	drawCard = (int)(Math.random() * 13 + 1);
 	switch (drawCard) {
 	case 1:
@@ -70,9 +73,17 @@ public static void blackJackGame() {
 		points = 1000;
 		break;
 	}
-	System.out.println(drawCard);
+	System.out.println(cardName + " " + points);
+	}
+	
 	}
 }
+
+
+
+
+
+
 
 
 
