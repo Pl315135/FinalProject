@@ -1,9 +1,28 @@
 package main;
 
-public class Wallet {
+import games.Slots;
 
+public class Wallet {
+	
+	private static int money = 100;	
+	
 	public static void money() {
-		int moneyAmount = 100;
-		System.out.println("\nYou have " + moneyAmount + " dollars.");
+	
+		System.out.println("\nYou have " + money + " dollars.");
+
 	}
-}
+		
+			
+		public static int moneyAmount(int bet, int winnings) {
+			
+			int endMoney = 0;
+			Slots.Okay(bet, winnings);
+			endMoney = (money - bet) + winnings;
+			System.out.print("\nYou have " + endMoney + " dollars.");
+			return money;
+		
+			
+		}
+
+	}
+
