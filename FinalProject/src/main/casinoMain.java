@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import games.BlackJack;
 import games.Slots;
+import games.roulette;
 
 public class casinoMain {
 
@@ -32,7 +33,7 @@ public class casinoMain {
 		BlackJack.blackJackGame();
 		}
 //		else if(gameChoice == 2) {
-//		
+	     roulette.roulette();
 //		}
 //		else if(gameChoice == 3) {
 		Slots.randomGen();
